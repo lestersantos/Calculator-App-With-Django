@@ -8,8 +8,10 @@
 <body>
     <div class="center">
         <h1>Basic Calculator</h1>
-        
-        <form action=result>
+        <!-- Returns an absoulte path reference (a URL without the domain name)
+        matching a given view. Output links without violating the DRY
+        principle by having to hard-code URLs -->
+        <form action="{%url 'result' %}">
             <input type="number" name="number1" placeholder="Enter first number">
             <br>
             <br> 
